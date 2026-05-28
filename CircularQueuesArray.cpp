@@ -24,6 +24,9 @@ public:
 
         // cek apakah antrian penuh
         if ((FRINT == 0 && REAR == MAX - 1) || (FRONT == REAR + 1))
-        
+        {
+            cout << "\nQueue overflow\n";
+            return;
+        }
     }
 }
