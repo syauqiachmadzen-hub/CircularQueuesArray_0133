@@ -23,7 +23,7 @@ public:
         cout << endl;
 
         // cek apakah antrian penuh
-        if ((FRINT == 0 && REAR == MAX - 1) || (FRONT == REAR + 1))
+        if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
         {
             cout << "\nQueue overflow\n";
             return;
@@ -45,5 +45,16 @@ public:
         }
         queue_array[REAR] = num;
     }
-    
+    void remove()
+    {
+        // cek apakah antrian kosong
+        if (FRONT == -1)
+        {
+            cout << "Queue underflow\n";
+            return;
+        }
+        cout << "\nThe elemen delete from the queue is: " << queue_array[FRONT] << "\n";
+
+        //cek jika 
+    }
 }
